@@ -1,0 +1,90 @@
+*{margin: 0; padding:0;box-sizing: border-box;}
+body{background-image: url("1767454069977.jpg");
+background-size: cover;background-position: center;
+background-repeat: no-repeat;color: #fff;
+background: linear-gradient(rgba(0,0,0,0.6),
+rgba(0,0,0,0.6));}
+header{display: flex; padding: 20px;margin: 10px;
+     line-height: 1.5;
+text-align: center;flex-direction: column;}
+h1{font-size: larger;}
+section{background-color:navy;  margin: 10px;
+border-radius: 10px;line-height: 2.0;
+text-align: center;padding: 15px;}
+.whatsapp-Btn{display: inline-block; padding: 10px 15px;
+background-color: green;border-radius: 5px;
+transition: 0.3s;color: aliceblue;}
+.whatsapp-Btn:hover{background-color: aqua;
+transform: scale(1.2);}
+.Whatsapp, .Email, .GitHub{padding: 10px 15px;
+display: inline-block;border-radius: 5px;
+color: white;transition: 0.3s;}
+nav{padding: 20px;margin: 15px;}
+.navLinks{display: flex; flex-direction: column; position: fixed; 
+    margin: 15px;top:0;
+gap: 15px;}
+nav a{color: rgb(26, 26, 190);transition: 0.3s;
+margin: 10px;}
+nav a:hover{color: rgb(6, 6, 68);}
+.Whatsapp{background-color: green;}
+.Whatsapp:hover{background-color: aqua;
+    transform: scale(1.2);}
+.Email{background-color: grey;}
+.Email:hover{background-color: burlywood;
+    transform: scale(1.2);}
+.GitHub{background-color: #000;}
+.GitHub:hover{background-color: aqua;
+        transform: scale(1.2);}
+h2{color: grey;}
+ul li{list-style: none;}
+.cardi, .carde, .cardo{display: flex; padding: 20px;margin: 10px;
+border-radius: 10px;align-items: center;
+justify-content: center;}
+.cardi{background-image: url("1730367538519.jpg");
+background-size: cover;background-position: center;}
+.carde{background-image: url("1732781432534.jpg");
+background-size: cover;background-position: center;}
+.cardo{background-image: url("1734076828848.jpg");
+background-size: cover;background-position: center;}
+.contactBtn, .taskBtn {background-color: rgb(21, 20, 20);
+color: aliceblue;display: inline-block;
+padding: 10px 15px;border-radius: 5px;}
+.completed{text-decoration: line-through;opacity: 0.6;
+color: black;}
+.doneBtn{margin: 5px; padding: 5px 10px;
+background-color: rgb(6, 6, 122); border-radius: 5px;
+color: azure;}
+.deleteBtn{background-color: green;color: azure;
+padding: 5px 10px; border-radius: 5px;}
+footer{display: block; color: rgb(21, 14, 14);}
+.menu-Btn{display: none;}
+@media (max-width :768px ){
+.menu-Btn span{width: 25px; height: 3px;
+ background-color: blue; display: block;
+border-radius: 5px;transition: 0.3s; margin: 3px;}
+ .navLinks{position: absolute;transition: 0.5s;
+top: 115px; gap: 20px;opacity: 0;
+transform: translateY(-20px);
+flex-direction: row;}
+.menu-Btn{display: flex;flex-direction: column;
+gap: 4px;cursor: pointer; padding: 10px;
+width: fit-content;background-color:black;
+top: -40px;position: relative;right: 30px;}
+.menu-Btn.active span:nth-child(1)
+{transform: translate(6px, 6px)
+    rotate(45deg);}
+.menu-Btn.active span:nth-child(2) {opacity: 0;}
+.menu-Btn.active span:nth-child(3)
+{transform: translate(6px, -6px)
+    rotate(-45deg);}
+.navLinks.active{ display: flex; opacity: 1;
+    transform: translateY(0%);}
+.menu-Btn.active{display: block;}
+.menu-Btn:hover span{background-color:white}
+.menu-Btn:hover{background-color: red;}
+.overlay{opacity: 0;background-color: rgba(0,0,0,0);
+width: 100%;height: 100%; right: 0; left: 0;
+pointer-events: none; position: fixed;}
+.overlay.active{background-color: rgba(0,0,0,0.6);
+opacity: 1; pointer-events: all;}
+}
